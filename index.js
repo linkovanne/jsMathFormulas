@@ -15,19 +15,17 @@ function isPrime(nb) {
     //     return (nb);
     // }
     if(nb <= 1){
-        return NaN;
+        return ;
     } else if(nb == 2 || nb == 3){
         return(nb);
     } else {
         for(i = 2; i*i <= nb; i++){
             if (nb % i == 0){
-                break;
-            } else {
-                return(nb);
+                return ;
             }
         }
+        return(nb);
     }
-
 }
 console.log(nb);
 

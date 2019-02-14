@@ -18,7 +18,6 @@ function countP(n) {
         return;
     } else {
         let p = +isPrime(3 * (2 ** (n - 1)) - 1);
-        // let p = 3 * (2 ** (n - 1)) - 1;
         return (p);
     }
 }
